@@ -10,18 +10,18 @@
     <table>
         <tr>
             <td align="right">Horizontal Resolution:</td>
-            <td align="left"><input type="number" name="hres" autofocus></td>
+            <td align="left"><input type="number" name="hres" value=3440 autofocus onfocus="this.select()"></td>
         </tr>
         <tr>
             <td align="right">Vertical Resolution:</td>
-            <td align="left"><input type="number" name="vres"></td>
+            <td align="left"><input type="number" name="vres" value=1440 onfocus="this.select()"></td>
         </tr>
         <tr><td align="right"><input type="submit" value="Submit"></td></tr>
     </table>
 </form>
 <span id="output">
 </span>
-<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="DS3res.js"></script>
 <script>
     getDS3Hex("output")
 </script>

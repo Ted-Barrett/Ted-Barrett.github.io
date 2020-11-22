@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<body>
+<a href="index.html">Home</a>
+<h1>
+    Premiere Tiling calculator
+</h1>
+<p>
+    Use the crop effect in combination with this tool to create nicely tiled videos.
+</p>
+<form>
+    <table>
+        <tr>
+            <td align="right">Frame size:</td>
+            <td align="left"><input type="number" name="framex" value=1920 autofocus onfocus="this.select()"></td>
+            <td>X</td>
+            <td align="left"><input type="number" name="framey" value=1080 onfocus="this.select()"></td>
+        </tr>
+        <tr>
+            <td align="right">Source size:</td>
+            <td align="left"><input type="number" name="sourcex" value=1920 onfocus="this.select()"></td>
+            <td>X</td>
+            <td align="left"><input type="number" name="sourcey" value=1080 onfocus="this.select()"></td>
+        </tr>
+        <tr>
+            <td align="right">Tiles:</td>
+            <td align="left"><input type="number" name="tilesx" value=3 onfocus="this.select()"></td>
+            <td>X</td>
+            <td align="left"><input type="number" name="tilesy" value=2 onfocus="this.select()"></td>
+        </tr>
+        <tr>
+            <td align="right">Scale:</td>
+            <td align="left"><input type="number" name="scale" value=100 onfocus="this.select()"></td>
+        </tr>
+        <tr>
+<!--    </table>-->
+<!--</form>-->
+<!--<form>-->
+<!--    <table>-->
+        <tr>
+            <td align="right">Horizontal offset (crop %):</td>
+            <td align="left"><input type="number" name="hoffset" value=0 onfocus="this.select()"></td>
+        </tr>
+        <tr>
+            <td align="right">Vertical offset (crop %):</td>
+            <td align="left"><input type="number" name="voffset" value=0 onfocus="this.select()"></td>
+        </tr>
+        <tr><td align="right"><input type="submit" value="Submit"></td></tr>
+    </table>
+</form>
+<p id="output">
+</p>
+<script type="text/javascript" src="premiereTiling.js"></script>
+<script>
+    calcPremiereTiles("output")
+</script>
+</body>
+</html>
