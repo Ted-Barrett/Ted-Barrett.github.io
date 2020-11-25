@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
-<body>
+<script type="text/javascript" src="prevvalues.js"></script>
+<body onload="setPrevValues(['hres','vres'])">
 <a href="index.html">Home</a>
 <h1>
     Dark Souls 3 Hex values calculator
@@ -10,11 +11,11 @@
     <table>
         <tr>
             <td align="right">Horizontal Resolution:</td>
-            <td align="left"><input type="number" name="hres" value=3440 autofocus onfocus="this.select()"></td>
+            <td align="left"><input type="number" id="hres" name="hres" value=3440 autofocus onfocus="this.select()"></td>
         </tr>
         <tr>
             <td align="right">Vertical Resolution:</td>
-            <td align="left"><input type="number" name="vres" value=1440 onfocus="this.select()"></td>
+            <td align="left"><input type="number" id="vres" name="vres" value=1440 onfocus="this.select()"></td>
         </tr>
         <tr><td align="right"><input type="submit" value="Submit"></td></tr>
     </table>
