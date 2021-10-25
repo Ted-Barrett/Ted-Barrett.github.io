@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<a href="index.html">Home</a>
+<head>
+    <meta charset="UTF-8">
+    <title>ACC Setup Generator</title>
+</head>
+<body>
+<div class="pageCenter">
+    <h1>
+        ACC Setup Generator
+    </h1>
+    <a>Choose a baseline setup:</a>
+    <br>
+    <input type="file"
+           id="jsonInput"
+           name="Base setup"
+           accept=".json">
+    <br><br>
+    <form id="mainForm">
+        Race information
+        <table>
+            <tr>
+                <td class="textRight">In game race start time:</td>
+                <td class="textLeft">
+                    <input class="int2" type="tel" id="IGstartHours" min="0" max="24" placeholder="h" maxlength="2" onfocus="this.select()">
+                    <input class="int2" type="tel" id="IGstartMins" min="0" max="59" placeholder="m" maxlength="2" onfocus="this.select()">
+                </td>
+            </tr>
+            <tr>
+                <td class="textRight">Real race start time:</td>
+                <td class="textLeft">
+                    <input class="int2" type="tel" id="RLstartHours" min="0" max="24" placeholder="h" maxlength="2" onfocus="this.select()">
+                    <input class="int2" type="tel" id="RLstartMins" min="0" max="59" placeholder="m" maxlength="2" onfocus="this.select()">
+                </td>
+            </tr>
+            <tr>
+                <td class="textRight">Race duration:</td>
+                <td class="textLeft">
+                    <input class="int2" type="tel" id="raceHours" min="0" placeholder="h" maxlength="2"
+                           onfocus="this.select()">
+                    <input class="int2" type="tel" id="raceMins" min="0" placeholder="m" maxlength="2"
+                           onfocus="this.select()">
+                    <input class="int2" type="tel" id="raceSecs" min="0" placeholder="s" maxlength="2"
+                           onfocus="this.select()">
+                </td>
+            </tr>
+            <tr style="border-bottom: 1px solid #ddd">
+                <td colspan="100%"></td>
+            </tr>
+            <tr>
+                <td class="textRight">Mandatory stops:</td>
+                <td class="textLeft">
+                    <input class="int2" type="tel" id="raceHours" min="0" placeholder="h" maxlength="2"
+                </td>
+            </tr>
+            <tr>
+                <td class="textRight">Leader lap time:</td>
+                <td class="textLeft">
+                    <input class="int2" type="tel" id="leadMins" placeholder="m" maxlength="2"
+                           onfocus="this.select()">
+                    <input class="int2" type="tel" id="leadSecs" placeholder="s" maxlength="2"
+                           onfocus="this.select()">
+                    <input class="int3" type="tel" id="leadMS" placeholder="ms"
+                           onfocus="this.select()">
+                </td>
+            </tr>
+        </table>
+        <br>
+        Drivers:
+        <a id="numDrivers">1</a>
+        <button type="button" onclick="adjDrivers(1)">+</button>
+        <button type="button" onclick="adjDrivers(-1)">-</button>
+        <table>
+            <tr class="driver">
+                <td>
+                    <table class="innerTable">
+                        Driver information
+                        <tr>
+                            <td class="textRight">Race lap time:</td>
+                            <td class="textLeft">
+                                <input class="int2" type="tel" id="lapMins0" placeholder="m" maxlength="2" onfocus="this.select()">
+                                <input class="int2" type="tel" id="lapSecs0" placeholder="s" maxlength="2" onfocus="this.select()">
+                                <input class="int3" type="tel" id="lapMS0" placeholder="ms" maxlength="3" onfocus="this.select()">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="textRight">Fuel per lap:</td>
+                            <td class="textLeft">
+                                <input type="text" id="fuelLap0" onfocus="this.select()">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td style="border-left: 1px solid #ddd"></td>
+                <td>
+                    <table class="innerTable">
+                        Tyre temperatures
+                        <tr>
+                            <th>
+                                Temp
+                            </th>
+                            <th>
+                                FL
+                            </th>
+                            <th>
+                                FR
+                            </th>
+                            <th>
+                                RL
+                            </th>
+                            <th>
+                                RR
+                            </th>
+                        </tr>
+                        <tr>
+                            <td class="textCenter">
+                                20
+                            </td>
+                            <td class="textCenter">
+                                <input class="dec2_2" type="tel" id="FL20" maxlength="5"
+                                       onfocus="this.select()">
+                            </td>
+                            <td class="textCenter">
+                                <input class="dec2_2" type="tel" id="FR20" maxlength="5"
+                                       onfocus="this.select()">
+                            </td>
+                            <td class="textCenter">
+                                <input class="dec2_2" type="tel" id="RL20" maxlength="5"
+                                       onfocus="this.select()">
+                            </td>
+                            <td class="textCenter">
+                                <input class="dec2_2" type="tel" id="RR20" maxlength="5"
+                                       onfocus="this.select()">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <tr>
+            <td class="textRight"><input type="button" value="Generate setup" onclick="genSetupButton()"></td>
+        </tr>
+    </form>
+</div>
+<script type="text/javascript" src="ACCSetup.js"></script>
+<script>
+    generateSetup("jsonInput",)
+</script>
+</body>
+</html>

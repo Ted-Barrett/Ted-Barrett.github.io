@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    .row {
+      margin-left:-5px;
+      margin-right:-5px;
+    }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+<h2>Tables Side by Side</h2>
+<p>How to create side-by-side tables with CSS:</p>
+
+<div class="row">
+  <div class="column">
+    <table>
+      <tr>
+        <td align="right">Race time:</td>
+        <td align="left">
+          <input type="text" id="raceHours" name="raceHours" size="1" maxlength="2" placeholder="h"
+                 autofocus
+                 onfocus="this.select()">
+          <input type="text" id="raceMins" name="raceMins" size="1" placeholder="m" autofocus
+                 onfocus="this.select()">
+          <input type="text" id="raceSecs" name="raceSecs" size="1" placeholder="s" autofocus
+                 onfocus="this.select()">
+        </td>
+      </tr>
+      <tr>
+        <td align="right">Leader lap time:</td>
+        <td align="left">
+          <input type="text" id="leadMins" name="leadMins" size="1" placeholder="m" autofocus
+                 onfocus="this.select()">
+          <input type="text" id="leadSecs" name="leadSecs" size="1" placeholder="s" autofocus
+                 onfocus="this.select()">
+          <input type="text" id="leadMS" name="leadMS" size="1" placeholder="ms" autofocus
+                 onfocus="this.select()">
+        </td>
+      </tr>
+      <tr>
+        <td align="right"><input type="submit" value="Submit"></td>
+      </tr>
+    </table>
+  </div>
+  <div class="column">
+    <table>
+      <tr>
+        <td align="right">Race time:</td>
+        <td align="left">
+          <input type="text" id="raceHours" name="raceHours" size="1" maxlength="2" placeholder="h"
+                 autofocus
+                 onfocus="this.select()">
+          <input type="text" id="raceMins" name="raceMins" size="1" placeholder="m" autofocus
+                 onfocus="this.select()">
+          <input type="text" id="raceSecs" name="raceSecs" size="1" placeholder="s" autofocus
+                 onfocus="this.select()">
+        </td>
+      </tr>
+      <tr>
+        <td align="right">Leader lap time:</td>
+        <td align="left">
+          <input type="text" id="leadMins" name="leadMins" size="1" placeholder="m" autofocus
+                 onfocus="this.select()">
+          <input type="text" id="leadSecs" name="leadSecs" size="1" placeholder="s" autofocus
+                 onfocus="this.select()">
+          <input type="text" id="leadMS" name="leadMS" size="1" placeholder="ms" autofocus
+                 onfocus="this.select()">
+        </td>
+      </tr>
+      <tr>
+        <td align="right"><input type="submit" value="Submit"></td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+</body>
+</html>
