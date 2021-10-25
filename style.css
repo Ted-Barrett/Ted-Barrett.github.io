@@ -2,6 +2,7 @@ body{
     background-color: #2f3640;
     color: #ffffff;
     font-family: Consolas;
+    overflow-y: scroll;
 }
 h1{
     color: #ffffff;
@@ -25,6 +26,10 @@ input::-webkit-inner-spin-button {
     /* display: none; <- Crashes Chrome on hover */
     -webkit-appearance: none;
     margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+input {
+    text-align: right;
 }
 
 input[type=number] {
@@ -52,7 +57,7 @@ table td {
     padding: 10px;
 }
 
-.textCenter {
+.textCentre {
     text-align: center;
 }
 
@@ -74,4 +79,12 @@ table td {
 
 .dec2_2 {
     width: 5ch;
+}
+
+.diagonalCrossDown {
+    background: linear-gradient(to top right, #0000 calc(50% - 1px), white , #0000 calc(50% + 1px) )
+}
+
+.diagonalCrossUp {
+    background: linear-gradient(to top left, #0000 calc(50% - 1px), white , #0000 calc(50% + 1px) )
 }
