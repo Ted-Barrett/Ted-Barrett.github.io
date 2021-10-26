@@ -6,30 +6,38 @@
 <div class="navBar">
     <a class="navLink" href="index.html">Home</a>
 </div>
-<div class="pageCenter">
-    <h1>
-        Dark Souls 3 Hex values calculator
-    </h1>
-    <br>
-    <a>Use to calculate hex values for DS3 on ultrawide monitors.</a><br><a>Intended to be used with</a>
-    <a class="pageLink" href="https://www.youtube.com/watch?v=1jP28z9H3Mg">this video.</a>
-    <br>
-    <br>
-    <form>
-        <table>
-            <tr>
-                <td align="right" class="bodyFont">Horizontal Resolution:</td>
-                <td align="left"><input type="number" style="width: 5ch; text-align: center" id="hres" name="hres" value=3440 onfocus="this.select()"></td>
-            </tr>
-            <tr>
-                <td align="right" class="bodyFont">Vertical Resolution:</td>
-                <td align="left"><input type="number" style="width: 5ch; text-align: center" id="vres" name="vres" value=1440 onfocus="this.select()"></td>
-            </tr>
-            <tr><td align="right"><input type="submit" value="Submit"></td></tr>
-        </table>
-    </form>
-    <span id="output" class="bodyFontMono">
+<div class="centered">
+    <div class="pageCenter">
+        <h1>
+            Dark Souls 3 Hex values calculator
+        </h1>
+        <br>
+        <a>Use to calculate hex values for DS3 on ultrawide monitors.</a><br><a>Intended to be used with</a>
+        <a class="pageLink" href="https://www.youtube.com/watch?v=1jP28z9H3Mg">this video.</a>
+        <br>
+        <br>
+        <form>
+            <table>
+                <tr>
+                    <td align="right" class="bodyFont">Horizontal Resolution:</td>
+                    <td align="left">
+                        <input type="number" style="width: 5ch; text-align: center" id="hres" name="hres" value=3440 onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" class="bodyFont">Vertical Resolution:</td>
+                    <td align="left">
+                        <input type="number" style="width: 5ch; text-align: center" id="vres" name="vres" value=1440 onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <span id="output" class="bodyFontMono">
 </span>
+    </div>
 </div>
 <script type="text/javascript" src="DS3res.js"></script>
 <script>
