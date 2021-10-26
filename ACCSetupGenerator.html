@@ -22,21 +22,21 @@
         Race information
         <table>
             <tr>
-                <td class="textRight">In game race start time:</td>
+                <td class="textRight">Race start time (in game):</td>
                 <td class="textLeft">
                     <input class="int2" type="tel" id="IGstartHours" placeholder="h" maxlength="2" onfocus="this.select()">
                     <input class="int2" type="tel" id="IGstartMins" placeholder="m" maxlength="2" onfocus="this.select()">
                 </td>
             </tr>
             <tr>
-                <td class="textRight">Real race start time:</td>
+                <td class="textRight">Race start time (real):</td>
                 <td class="textLeft">
                     <input class="int2" type="tel" id="RLstartHours" placeholder="h" maxlength="2" onfocus="this.select()">
                     <input class="int2" type="tel" id="RLstartMins" placeholder="m" maxlength="2" onfocus="this.select()">
                 </td>
             </tr>
             <tr>
-                <td class="textRight">Race duration:</td>
+                <td class="textRight">Race duration (real):</td>
                 <td class="textLeft">
                     <input class="int2" type="tel" id="raceHours" placeholder="h" maxlength="2" onfocus="this.select()">
                     <input class="int2" type="tel" id="raceMins" placeholder="m" maxlength="2" onfocus="this.select()">
@@ -89,7 +89,7 @@
             <tr>
                 <td class="textRight">Pit traversal time:</td>
                 <td class="textLeft">
-                    <input class="int3" type="tel" id="pitTraverse" placeholder="s" maxlength="3" onfocus="this.select()">
+                    <input class="int3" type="tel" id="pitTraverse" placeholder="s" maxlength="3" value="30" onfocus="this.select()">
                 </td>
             </tr>
             <tr>
@@ -218,6 +218,7 @@
 </script>
 
 </body>
+<script type="text/javascript" src="ACCClasses.js"></script>
 <script type="text/javascript" src="ACCSetup.js"></script>
 <script>startFunc()</script>
 </html>
