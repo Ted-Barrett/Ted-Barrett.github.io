@@ -1,24 +1,112 @@
+@font-face {
+    font-family: "Roboto-Black";
+    src: url("res/fonts/roboto/Roboto-Black.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url("res/fonts/roboto/Roboto-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto-Light";
+    src: url("res/fonts/roboto/Roboto-Light.ttf");
+}
+
+@font-face {
+    font-family: "Inconsolata";
+    src: url("res/fonts/inconsolata/Inconsolata-regular.ttf");
+}
+
 body{
-    background-color: #2f3640;
+    background-color: #212121;
     color: #ffffff;
-    font-family: Consolas;
+    font-family: "Roboto-Regular";
     overflow-y: scroll;
 }
+
 h1{
     color: #ffffff;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto-Black";
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
 }
+
+p {
+    font-family: "Roboto-Light";
+}
+
 form{
     color: #ffffff;
-    font-family: Consolas;
+    font-family: "Roboto-Regular";
 }
 a{
     color: #ffffff;
-    font-family: Consolas;
+    font-family: "Roboto-Regular";
 }
+
+.navBar {
+    padding: 5pt;
+    background: #1a1a1a;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    padding: 2pt;
+}
+
+.navLink {
+    font-size: large;
+    display: inline-block;
+    padding: 5pt;
+    height: 17pt;
+    color: #fff;
+    background: #ff5f5f;
+    font-family: "Roboto-Regular";
+    text-decoration: none;
+    border-radius: 13.5pt;
+}
+
+.bodyFontMono {
+    font-family: "Inconsolata";
+}
+
+.bodyFont {
+    font-family: "Roboto-Regular";
+}
+
+.pageLink:hover {
+    background: #4d4d4d;
+    border: #0000 1px solid;
+}
+
+.pageLink {
+    border: white 1px solid;
+    font-size: medium;
+    display: inline-block;
+    padding: 4pt 6pt 4pt 6pt;
+    color: #fff;
+    font-family: "Roboto-Regular";
+    text-decoration: none;
+    border-radius: 2pt;
+}
+
 span{
     color: #ffffff;
-    font-family: Consolas;
+    font-family: "Roboto-Regular";
+}
+
+.pageCenter {
+    horiz-align: center;
+    margin: auto;
+    max-width: 40em;
+    padding: 10px;
 }
 
 input::-webkit-outer-spin-button,
@@ -36,49 +124,8 @@ input[type=number] {
     -moz-appearance:textfield; /* Firefox */
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width: 100%;
-    border: 1px solid #fff;
-}
-
-.innerTable {
-    border: none;
-}
-
 table td {
     vertical-align: top;
-}
-
-.pageCenter {
-    margin: auto;
-    max-width: 40em;
-    padding: 10px;
-}
-
-.textCentre {
-    text-align: center;
-}
-
-.textRight {
-    text-align: right;
-}
-
-.textLeft {
-    text-align: left;
-}
-
-.int2 {
-    width: 2ch;
-}
-
-.int3 {
-    width: 3ch;
-}
-
-.dec2_2 {
-    width: 5ch;
 }
 
 .diagonalCrossDown {

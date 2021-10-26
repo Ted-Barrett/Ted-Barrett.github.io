@@ -1,210 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" href="style.css">
-<a href="index.html">Home</a>
 <head>
     <meta charset="UTF-8">
     <title>ACC Setup Generator</title>
 </head>
 <body>
+<div class="navBar">
+    <a class="navLink" href="index.html">Home</a>
+</div>
 <div class="pageCenter">
     <h1>
-        ACC Setup Generator
+        ACC Strategy Helper
     </h1>
-    <a>Choose a baseline setup:</a>
-    <br>
-    <input type="file"
-           id="jsonInput"
-           name="Base setup"
-           accept=".json">
-    <br><br>
-    <form id="mainForm">
-        Race information
-        <table>
-            <tr>
-                <td class="textRight">Race start time (in game):</td>
-                <td class="textLeft">
-                    <input class="int2" type="tel" id="IGstartHours" placeholder="h" maxlength="2" onfocus="this.select()">
-                    <input class="int2" type="tel" id="IGstartMins" placeholder="m" maxlength="2" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr>
-                <td class="textRight">Race start time (real):</td>
-                <td class="textLeft">
-                    <input class="int2" type="tel" id="RLstartHours" placeholder="h" maxlength="2" onfocus="this.select()">
-                    <input class="int2" type="tel" id="RLstartMins" placeholder="m" maxlength="2" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr>
-                <td class="textRight">Race duration (real):</td>
-                <td class="textLeft">
-                    <input class="int2" type="tel" id="raceHours" placeholder="h" maxlength="2" onfocus="this.select()">
-                    <input class="int2" type="tel" id="raceMins" placeholder="m" maxlength="2" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr>
-                <td class="textRight">Time multiplier:</td>
-                <td class="textLeft">
-                    <input class="int2" type="tel" id="timeMulti" maxlength="2" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd">
-                <td colspan="100%"></td>
-            </tr>
-            <tr>
-                <td class="textRight">Mandatory stops:</td>
-                <td class="textLeft">
-                    <input class="int2" type="tel" id="mandatoryStops" maxlength="2" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr>
-                <td class="textRight">Max stint time:</td>
-                <td class="textLeft">
-                    <input class="int2" type="tel" id="stintHours" placeholder="h" maxlength="2" onfocus="this.select()">
-                    <input class="int3" type="tel" id="stintMins" placeholder="m" maxlength="3" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr>
-                <td class="textRight">Max driver time:</td>
-                <td class="textLeft">
-                    <input class="int2" type="tel" id="driverHours" placeholder="h" maxlength="2" onfocus="this.select()">
-                    <input class="int3" type="tel" id="driverMins" placeholder="m" maxlength="3" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr>
-                <td class="textRight">Fuel tank capacity:</td>
-                <td class="textLeft">
-                    <input class="int3" type="tel" id="fuelCap" maxlength="3" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr>
-                <td class="textRight">Formation lap:</td>
-                <td class="textLeft">
-                    <input type="checkbox" id="formationLap" checked>
-                </td>
-            </tr>
-            <tr style="border-bottom: 1px solid #ddd">
-                <td colspan="100%"></td>
-            </tr>
-            <tr>
-                <td class="textRight">Pit traversal time:</td>
-                <td class="textLeft">
-                    <input class="int3" type="tel" id="pitTraverse" placeholder="s" maxlength="3" value="30" onfocus="this.select()">
-                </td>
-            </tr>
-            <tr>
-                <td class="textRight">Leader lap time:</td>
-                <td class="textLeft">
-                    <input class="int2" type="tel" id="leadMins" placeholder="m" maxlength="2" onfocus="this.select()">
-                    <input class="int2" type="tel" id="leadSecs" placeholder="s" maxlength="2" onfocus="this.select()">
-                    <input class="int3" type="tel" id="leadMS" placeholder="ms" maxlength="3" onfocus="this.select()">
-                </td>
-            </tr>
+    <div id="raceInfo"></div>
+    <div id="trackInfo"></div>
+    <div id="driverInfo">
+        <table id="driversTable">
         </table>
-        <br>
-        Track information
-        <table id="trackTempsTable">
-        </table>
-        <br>
-        Driver information
-        <table>
-            <tr>
-                <th>
-                    Drivers
-                </th>
-                <th>
-                    Minimum temperature
-                </th>
-                <th>
-                    Maximum temperature
-                </th>
-            </tr>
-            <tr>
-                <td class="textCentre">
-                    <a id="numDrivers">1</a>
-                    <button type="button" onclick="adjField(1,NUM_DRIVERS_ID,MIN_DRIVERS,MAX_DRIVERS); updateDriversTable();">
-                        +
-                    </button>
-                    <button type="button" onclick="adjField(-1,NUM_DRIVERS_ID,MIN_DRIVERS,MAX_DRIVERS); updateDriversTable();">
-                        -
-                    </button>
-                </td>
-                <td class="textCentre">
-                    <a id="minTemp">25</a>
-                    <button type="button" onclick="adjField(1,MIN_TEMP_ID,MIN_TEMP,Math.min(MAX_TEMP,getMaxTrackTemp())); updateTemps();">
-                        +
-                    </button>
-                    <button type="button" onclick="adjField(-1,MIN_TEMP_ID,MIN_TEMP,Math.min(MAX_TEMP,getMaxTrackTemp())); updateTemps();">
-                        -
-                    </button>
-                </td>
-                <td class="textCentre">
-                    <a id="maxTemp">30</a>
-                    <button type="button" onclick="adjField(1,MAX_TEMP_ID,Math.max(MIN_TEMP,getMinTrackTemp()),MAX_TEMP); updateTemps();">
-                        +
-                    </button>
-                    <button type="button" onclick="adjField(-1,MAX_TEMP_ID,Math.max(MIN_TEMP,getMinTrackTemp()),MAX_TEMP); updateTemps();">
-                        -
-                    </button>
-                </td>
-            </tr>
-        </table>
-        <table id="driverTable">
-            <tr class="driver">
-                <td>
-                    <table class="innerTable" name="driverInfo">
-                        Driver information
-                        <tr>
-                            <td class="textRight">Name:</td>
-                            <td class="textLeft">
-                                <input type="text" name="driverName" onfocus="this.select()" style="text-align: left">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="textRight">Race lap time:</td>
-                            <td class="textLeft">
-                                <input class="int2" type="tel" name="lapMins" placeholder="m" maxlength="2" onfocus="this.select()">
-                                <input class="int2" type="tel" name="lapSecs" placeholder="s" maxlength="2" onfocus="this.select()">
-                                <input class="int3" type="tel" name="lapMS" placeholder="ms" maxlength="3" onfocus="this.select()">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="textRight">Fuel per lap:</td>
-                            <td class="textLeft">
-                                <input class="dec2_2" type="tel" name="lapFuel" maxlength="5" onfocus="this.select()">
-                            </td>
-                        </tr>
-                    </table>
-                </td>
-                <td style="border-left: 1px solid #ddd"></td>
-                <td>
-                    <table class="innerTable" name="tyres">
-                        <tr>
-                            <th>Temp</th>
-                            <th>FL</th>
-                            <th>FR</th>
-                            <th>RL</th>
-                            <th>RR</th>
-                        </tr>
-                        <tr>
-                            <td class="textCentre">20</td>
-                            <td class="textCentre">
-                                <input class="dec2_2" type="tel" name="FL" maxlength="5" onfocus="this.select()"></td>
-                            <td class="textCentre">
-                                <input class="dec2_2" type="tel" name="FR" maxlength="5" onfocus="this.select()"></td>
-                            <td class="textCentre">
-                                <input class="dec2_2" type="tel" name="RL" maxlength="5" onfocus="this.select()"></td>
-                            <td class="textCentre">
-                                <input class="dec2_2" type="tel" name="RR" maxlength="5" onfocus="this.select()"></td>
-                        </tr>
-                    </table>
-                </td>
-            </tr>
-        </table>
-        <tr>
-            <td class="textRight"><input type="button" value="Generate setup" onclick="genSetupButton()"></td>
-        </tr>
-    </form>
+    </div>
 </div>
 
 <script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
@@ -218,7 +32,6 @@
 </script>
 
 </body>
-<script type="text/javascript" src="ACCClasses.js"></script>
+<script type="text/javascript" src="ACC_Classes.js"></script>
 <script type="text/javascript" src="ACCSetup.js"></script>
-<script>startFunc()</script>
 </html>

@@ -3,25 +3,29 @@
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="prevvalues.js"></script>
 <body onload="setPrevValues(['hres','vres'])">
-<a href="index.html">Home</a>
-<h1>
-    Dark Souls 3 Hex values calculator
-</h1>
-<form>
-    <table>
-        <tr>
-            <td align="right">Horizontal Resolution:</td>
-            <td align="left"><input type="number" id="hres" name="hres" value=3440 autofocus onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Vertical Resolution:</td>
-            <td align="left"><input type="number" id="vres" name="vres" value=1440 onfocus="this.select()"></td>
-        </tr>
-        <tr><td align="right"><input type="submit" value="Submit"></td></tr>
-    </table>
-</form>
-<span id="output">
+<div class="navBar">
+    <a class="navLink" href="index.html">Home</a>
+</div>
+<div class="pageCenter">
+    <h1>
+        Dark Souls 3 Hex values calculator
+    </h1>
+    <form>
+        <table>
+            <tr>
+                <td align="right" class="bodyFont">Horizontal Resolution:</td>
+                <td align="left"><input type="number" style="width: 5ch; text-align: center" id="hres" name="hres" value=3440 onfocus="this.select()"></td>
+            </tr>
+            <tr>
+                <td align="right" class="bodyFont">Vertical Resolution:</td>
+                <td align="left"><input type="number" style="width: 5ch; text-align: center" id="vres" name="vres" value=1440 onfocus="this.select()"></td>
+            </tr>
+            <tr><td align="right"><input type="submit" value="Submit"></td></tr>
+        </table>
+    </form>
+    <span id="output">
 </span>
+</div>
 <script type="text/javascript" src="DS3res.js"></script>
 <script>
     getDS3Hex("output")

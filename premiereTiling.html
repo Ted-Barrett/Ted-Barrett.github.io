@@ -3,55 +3,64 @@
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="prevvalues.js"></script>
 <body onload="setPrevValues(['framex','framey','sourcex','sourcey','tilesx','tilesy','scale','hoffset','voffset'])">
-<a href="index.html">Home</a>
-<h1>
-    Premiere Tiling calculator
-</h1>
-<p>
-    Use the crop effect in combination with this tool to create nicely tiled videos.
-</p>
-<form>
-    <table>
-        <tr>
-            <td align="right">Frame size:</td>
-            <td align="left"><input type="number" id="framex" name="framex" value=1920 autofocus onfocus="this.select()"></td>
-            <td>X</td>
-            <td align="left"><input type="number" id="framey" name="framey" value=1080 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Source size:</td>
-            <td align="left"><input type="number" id="sourcex" name="sourcex" value=1920 onfocus="this.select()"></td>
-            <td>X</td>
-            <td align="left"><input type="number" id="sourcey" name="sourcey" value=1080 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Tiles:</td>
-            <td align="left"><input type="number" id="tilesx" name="tilesx" value=3 onfocus="this.select()"></td>
-            <td>X</td>
-            <td align="left"><input type="number" id="tilesy" name="tilesy" value=2 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Scale:</td>
-            <td align="left"><input type="number" id="scale" name="scale" value=100 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-<!--    </table>-->
-<!--</form>-->
-<!--<form>-->
-<!--    <table>-->
-        <tr>
-            <td align="right">Horizontal offset (crop %):</td>
-            <td align="left"><input type="number" id="hoffset" name="hoffset" value=0 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Vertical offset (crop %):</td>
-            <td align="left"><input type="number" id="voffset" name="voffset" value=0 onfocus="this.select()"></td>
-        </tr>
-        <tr><td align="right"><input type="submit" value="Submit"></td></tr>
-    </table>
-</form>
-<p id="output">
-</p>
+<div class="navBar">
+    <a class="navLink" href="index.html">Home</a>
+</div>
+<div class="pageCenter">
+    <h1>
+        Premiere Tiling calculator
+    </h1>
+    <p>
+        Use the crop effect in combination with this tool to create nicely tiled videos.
+    </p>
+    <form>
+        <table>
+            <tr>
+                <td align="right">Frame size:</td>
+                <td align="left">
+                    <input type="number" id="framex" name="framex" value=1920 onfocus="this.select()"></td>
+                <td>X</td>
+                <td align="left"><input type="number" id="framey" name="framey" value=1080 onfocus="this.select()"></td>
+            </tr>
+            <tr>
+                <td align="right">Source size:</td>
+                <td align="left"><input type="number" id="sourcex" name="sourcex" value=1920 onfocus="this.select()">
+                </td>
+                <td>X</td>
+                <td align="left"><input type="number" id="sourcey" name="sourcey" value=1080 onfocus="this.select()">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Tiles:</td>
+                <td align="left"><input type="number" id="tilesx" name="tilesx" value=3 onfocus="this.select()"></td>
+                <td>X</td>
+                <td align="left"><input type="number" id="tilesy" name="tilesy" value=2 onfocus="this.select()"></td>
+            </tr>
+            <tr>
+                <td align="right">Scale:</td>
+                <td align="left"><input type="number" id="scale" name="scale" value=100 onfocus="this.select()"></td>
+            </tr>
+            <tr>
+                <!--    </table>-->
+                <!--</form>-->
+                <!--<form>-->
+                <!--    <table>-->
+            <tr>
+                <td align="right">Horizontal offset (crop %):</td>
+                <td align="left"><input type="number" id="hoffset" name="hoffset" value=0 onfocus="this.select()"></td>
+            </tr>
+            <tr>
+                <td align="right">Vertical offset (crop %):</td>
+                <td align="left"><input type="number" id="voffset" name="voffset" value=0 onfocus="this.select()"></td>
+            </tr>
+            <tr>
+                <td align="right"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+    </form>
+    <p id="output">
+    </p>
+</div>
 <script type="text/javascript" src="premiereTiling.js"></script>
 <script>
     calcPremiereTiles("output")
