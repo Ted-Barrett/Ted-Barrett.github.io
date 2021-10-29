@@ -47,6 +47,17 @@ class Drivers {
 
         return returnString;
     }
+
+    updateTables() {
+        for (let i = 0; i < MAX_DRIVERS; i++) {
+            let row = this._driversTable.rows[i];
+            if (i > this._numDrivers - 1) {
+                row.style.display = "none";
+            } else {
+                row.style.display = "";
+            }
+        }
+    }
 }
 
 class lapTime {
@@ -55,9 +66,9 @@ class lapTime {
     ms;
 
     constructor() {
-        this._min=0.0;
-        this._sec=0.0;
-        this._ms=0.0;
+        this._min = 0.0;
+        this._sec = 0.0;
+        this._ms = 0.0;
     }
 
 
@@ -119,13 +130,13 @@ class Driver {
         let labels = ["Driver name:", "Race lap time:", "Race lap fuel:"];
         let inputCells = [document.createElement("td"), document.createElement("td"), document.createElement("td")];
         inputCells[0].innerHTML =
-            "<input type='text' onchange='d._drivers.get("+this._id.toString()+")._name=this.value'>";
+            "<input type='text' onchange='d._drivers.get(" + this._id.toString() + ")._name=this.value'>";
         inputCells[1].innerHTML =
-            "<input type='tel' style='width: 2ch' maxlength='2' onchange='d._drivers.get("+this._id.toString()+")._raceLap._min=this.value'>:" +
-            "<input type='tel' style='width: 2ch' maxlength='2' onchange='d._drivers.get("+this._id.toString()+")._raceLap._sec=this.value'>." +
-            "<input type='tel' style='width: 3ch' maxlength='3' onchange='d._drivers.get("+this._id.toString()+")._raceLap._ms=this.value'>";
+            "<input type='tel' style='width: 2ch' maxlength='2' onchange='d._drivers.get(" + this._id.toString() + ")._raceLap._min=this.value'>:" +
+            "<input type='tel' style='width: 2ch' maxlength='2' onchange='d._drivers.get(" + this._id.toString() + ")._raceLap._sec=this.value'>." +
+            "<input type='tel' style='width: 3ch' maxlength='3' onchange='d._drivers.get(" + this._id.toString() + ")._raceLap._ms=this.value'>";
         inputCells[2].innerHTML =
-            "<input type='tel' style='width: 5ch' maxlength='5' onchange='d._drivers.get("+this._id.toString()+")._raceLapFuel=parseFloat(this.value)'><a class='inputUnit'> litres</a>"
+            "<input type='tel' style='width: 5ch' maxlength='5' onchange='d._drivers.get(" + this._id.toString() + ")._raceLapFuel=parseFloat(this.value)'><a class='inputUnit'> litres</a>"
         for (let i = 0; i < labels.length; i++) {
             let row = table.insertRow(-1);
             let label = document.createElement("label");
@@ -195,7 +206,7 @@ class TyrePressuresAtTemps {
             let row = table.insertRow(-1);
             row.insertCell(-1).innerHTML = i;
             for (let j = 0; j < TYRES.length; j++) {
-                row.insertCell(-1).innerHTML = "<input type='tel' style='width: 5ch' maxlength='5'>";
+                row.insertCell(-1).innerHTML = "<input type='tel' style='width: 5ch' maxlength='5' onchange='d._drivers.get(" + this._id.toString() + ")._tyrePressuresAtTemps._tempsAndPressures.get(" + i.toString() + ").pressures.set(\"" + TYRES[j] + "\",parseFloat(this.value))'>";
             }
             if (i >= current_min_temp && i <= current_max_temp) {
                 row.style.display = "";
@@ -244,7 +255,7 @@ class TyrePressures {
 
     toString() {
         let returnString = "";
-        for (let i=0; i<TYRES.length;i++){
+        for (let i = 0; i < TYRES.length; i++) {
             returnString += TYRES[i] + ": " + this.getPressure(TYRES[i]) + " ";
         }
 
