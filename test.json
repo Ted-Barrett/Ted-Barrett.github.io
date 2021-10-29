@@ -1,0 +1,2812 @@
+{
+  "_drivers": {
+    "dataType": "Map",
+    "value": [
+      [
+        0,
+        {
+          "_id": 0,
+          "_name": "Ted",
+          "_raceLap": {
+            "_min": "2",
+            "_sec": "16",
+            "_ms": "123"
+          },
+          "_raceLapFuel": 3.2,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": [
+                        [
+                          "FL",
+                          1
+                        ],
+                        [
+                          "FR",
+                          2
+                        ],
+                        [
+                          "RL",
+                          3
+                        ],
+                        [
+                          "RR",
+                          4
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": [
+                        [
+                          "FL",
+                          4
+                        ],
+                        [
+                          "FR",
+                          3
+                        ],
+                        [
+                          "RL",
+                          2
+                        ],
+                        [
+                          "RR",
+                          1
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": [
+                        [
+                          "FL",
+                          1
+                        ],
+                        [
+                          "FR",
+                          2
+                        ],
+                        [
+                          "RL",
+                          3
+                        ],
+                        [
+                          "RR",
+                          4
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": [
+                        [
+                          "FL",
+                          4
+                        ],
+                        [
+                          "FR",
+                          3
+                        ],
+                        [
+                          "RL",
+                          2
+                        ],
+                        [
+                          "RR",
+                          1
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": [
+                        [
+                          "FL",
+                          1
+                        ],
+                        [
+                          "FR",
+                          2
+                        ],
+                        [
+                          "RL",
+                          3
+                        ],
+                        [
+                          "RR",
+                          4
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": [
+                        [
+                          "FL",
+                          4
+                        ],
+                        [
+                          "FR",
+                          3
+                        ],
+                        [
+                          "RL",
+                          2
+                        ],
+                        [
+                          "RR",
+                          1
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 0
+          }
+        }
+      ],
+      [
+        1,
+        {
+          "_id": 1,
+          "_raceLap": {
+            "_min": 0,
+            "_sec": 0,
+            "_ms": 0
+          },
+          "_raceLapFuel": 0,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 1
+          }
+        }
+      ],
+      [
+        2,
+        {
+          "_id": 2,
+          "_raceLap": {
+            "_min": 0,
+            "_sec": 0,
+            "_ms": 0
+          },
+          "_raceLapFuel": 0,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 2
+          }
+        }
+      ],
+      [
+        3,
+        {
+          "_id": 3,
+          "_raceLap": {
+            "_min": 0,
+            "_sec": 0,
+            "_ms": 0
+          },
+          "_raceLapFuel": 0,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 3
+          }
+        }
+      ],
+      [
+        4,
+        {
+          "_id": 4,
+          "_raceLap": {
+            "_min": 0,
+            "_sec": 0,
+            "_ms": 0
+          },
+          "_raceLapFuel": 0,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 4
+          }
+        }
+      ],
+      [
+        5,
+        {
+          "_id": 5,
+          "_raceLap": {
+            "_min": 0,
+            "_sec": 0,
+            "_ms": 0
+          },
+          "_raceLapFuel": 0,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 5
+          }
+        }
+      ],
+      [
+        6,
+        {
+          "_id": 6,
+          "_raceLap": {
+            "_min": 0,
+            "_sec": 0,
+            "_ms": 0
+          },
+          "_raceLapFuel": 0,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 6
+          }
+        }
+      ],
+      [
+        7,
+        {
+          "_id": 7,
+          "_raceLap": {
+            "_min": 0,
+            "_sec": 0,
+            "_ms": 0
+          },
+          "_raceLapFuel": 0,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 7
+          }
+        }
+      ],
+      [
+        8,
+        {
+          "_id": 8,
+          "_raceLap": {
+            "_min": 0,
+            "_sec": 0,
+            "_ms": 0
+          },
+          "_raceLapFuel": 0,
+          "_containingRow": {},
+          "_tyrePressuresAtTemps": {
+            "_tempsAndPressures": {
+              "dataType": "Map",
+              "value": [
+                [
+                  10,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  11,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  12,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  13,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  14,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  15,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  16,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  17,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  18,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  19,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  20,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  21,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  22,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  23,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  24,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  25,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  26,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  27,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  28,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  29,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  30,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  31,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  32,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  33,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  34,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  35,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  36,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  37,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  38,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  39,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ],
+                [
+                  40,
+                  {
+                    "pressures": {
+                      "dataType": "Map",
+                      "value": []
+                    }
+                  }
+                ]
+              ]
+            },
+            "_id": 8
+          }
+        }
+      ]
+    ]
+  },
+  "_numDrivers": 1,
+  "_driversTable": {}
+}
