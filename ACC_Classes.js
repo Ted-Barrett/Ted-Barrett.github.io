@@ -18,15 +18,17 @@ class Drivers {
     _drivers;
     _numDrivers;
 
-    _driversTable;
-
     constructor() {
-        this._driversTable = document.getElementById(DRIVERS_TABLE_ID);
+
+    }
+
+    initialiseNew() {
+        let _driversTable = document.getElementById(DRIVERS_TABLE_ID);
         this._drivers = new Map();
         this._numDrivers = 1;
         for (let i = 0; i < MAX_DRIVERS; i++) {
             let driver = new Driver(i);
-            let row = this._driversTable.insertRow(i);
+            let row = _driversTable.insertRow(i);
             if (i > this._numDrivers - 1) {
                 row.style.display = "none";
             } else {
@@ -36,6 +38,11 @@ class Drivers {
             driver.initTable();
             this._drivers.set(i, driver);
         }
+    }
+
+    loadFromJson(jsonObject) {
+        this._drivers = jsonObject._drivers;
+        this._numDrivers = jsonObject._numDrivers;
     }
 
 
@@ -50,7 +57,7 @@ class Drivers {
 
     updateTables() {
         for (let i = 0; i < MAX_DRIVERS; i++) {
-            let row = this._driversTable.rows[i];
+            let row = document.getElementById(DRIVERS_TABLE_ID).rows[i];
             if (i > this._numDrivers - 1) {
                 row.style.display = "none";
             } else {

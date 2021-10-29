@@ -1,11 +1,15 @@
 let d = new Drivers();
+d.initialiseNew();
+let e = new Drivers();
 console.log(d.toString())
 
 document.getElementById('download').addEventListener('click', () => {
     let dl = document.createElement('a')
     dl.download = 'test.json' // target filename
-    dl.href = `data:application/json;charset=utf-8,${JSON.stringify(d,replacer)}`
+    let jsonString = `${JSON.stringify(d,replacer)}`
+    dl.href = `data:application/json;charset=utf-8,`+jsonString
     dl.click()
+    e.loadFromJson(JSON.parse(jsonString,reviver));
 })
 
 
