@@ -25,7 +25,7 @@ class Drivers {
         this._drivers = new Map();
         this._numDrivers = 1;
         for (let i = 0; i < MAX_DRIVERS; i++) {
-            let driver = new Driver;
+            let driver = new Driver(i);
             let row = this._driversTable.insertRow(i);
             if (i > this._numDrivers - 1) {
                 row.style.display = "none";
@@ -37,9 +37,49 @@ class Drivers {
             this._drivers.set(i, driver);
         }
     }
+
+
+    toString() {
+        let returnString = "";
+        for (let i = 0; i < this._drivers.size; i++) {
+            returnString += this._drivers.get(i).toString() + "\n";
+        }
+
+        return returnString;
+    }
+}
+
+class lapTime {
+    min;
+    sec;
+    ms;
+
+    constructor() {
+        this._min=0.0;
+        this._sec=0.0;
+        this._ms=0.0;
+    }
+
+
+    set min(value) {
+        this._min = parseFloat(value);
+    }
+
+    set sec(value) {
+        this._sec = parseFloat(value);
+    }
+
+    set ms(value) {
+        this._ms = parseFloat(value);
+    }
+
+    toString() {
+        return this._min.toString() + ":" + this._sec.toString() + "." + this._ms.toString();
+    }
 }
 
 class Driver {
+    _id;
     _name;
     _raceLap;
     _raceLapFuel;
@@ -48,8 +88,11 @@ class Driver {
 
     _tyrePressuresAtTemps;
 
-    constructor() {
-        this._tyrePressuresAtTemps = new TyrePressuresAtTemps();
+    constructor(id) {
+        this._id = id;
+        this._tyrePressuresAtTemps = new TyrePressuresAtTemps(this._id);
+        this._raceLap = new lapTime();
+        this._raceLapFuel = 0.0;
     }
 
     giveRow(row) {
@@ -75,9 +118,14 @@ class Driver {
 
         let labels = ["Driver name:", "Race lap time:", "Race lap fuel:"];
         let inputCells = [document.createElement("td"), document.createElement("td"), document.createElement("td")];
-        inputCells[0].innerHTML = "<input type='text'>";
-        inputCells[1].innerHTML = "<input type='tel' style='width: 2ch' maxlength='2'>:<input type='tel' style='width: 2ch' maxlength='2'>.<input type='tel' style='width: 3ch' maxlength='3'>";
-        inputCells[2].innerHTML = "<input type='tel' style='width: 5ch' maxlength='5'><a class='inputUnit'> litres</a>"
+        inputCells[0].innerHTML =
+            "<input type='text' onchange='d._drivers.get("+this._id.toString()+")._name=this.value'>";
+        inputCells[1].innerHTML =
+            "<input type='tel' style='width: 2ch' maxlength='2' onchange='d._drivers.get("+this._id.toString()+")._raceLap._min=this.value'>:" +
+            "<input type='tel' style='width: 2ch' maxlength='2' onchange='d._drivers.get("+this._id.toString()+")._raceLap._sec=this.value'>." +
+            "<input type='tel' style='width: 3ch' maxlength='3' onchange='d._drivers.get("+this._id.toString()+")._raceLap._ms=this.value'>";
+        inputCells[2].innerHTML =
+            "<input type='tel' style='width: 5ch' maxlength='5' onchange='d._drivers.get("+this._id.toString()+")._raceLapFuel=parseFloat(this.value)'><a class='inputUnit'> litres</a>"
         for (let i = 0; i < labels.length; i++) {
             let row = table.insertRow(-1);
             let label = document.createElement("label");
@@ -100,6 +148,17 @@ class Driver {
 
     get driverTable() {
 
+    }
+
+    toString() {
+        let returnString = "";
+        returnString += "ID: " + this._id.toString()
+            + "\nName: " + this._name
+            + "\nLap time: " + this._raceLap.toString()
+            + "\nLap fuel: " + this._raceLapFuel.toString()
+            + "\nvvv Tyres vvv\n" + this._tyrePressuresAtTemps.toString();
+
+        return returnString;
     }
 }
 
@@ -146,6 +205,15 @@ class TyrePressuresAtTemps {
         }
         return table;
     }
+
+    toString() {
+        let returnString = "";
+        for (let i = MIN_TEMP; i <= MAX_TEMP; i++) {
+            returnString += i.toString() + " " + this.pressuresAt(i).toString() + "\n";
+        }
+
+        return returnString;
+    }
 }
 
 
@@ -172,5 +240,14 @@ class TyrePressures {
 
     isValid() {
         return (this.pressures.size === 4);
+    }
+
+    toString() {
+        let returnString = "";
+        for (let i=0; i<TYRES.length;i++){
+            returnString += TYRES[i] + ": " + this.getPressure(TYRES[i]) + " ";
+        }
+
+        return returnString;
     }
 }
