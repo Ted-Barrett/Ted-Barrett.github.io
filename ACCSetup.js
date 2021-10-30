@@ -21,8 +21,9 @@ document.getElementById('download').addEventListener('click', () => {
     let dl = document.createElement('a')
     dl.download = 'test.json' // target filename
     let jsonString = `${JSON.stringify(d,replacer)}`
+    let file = new Blob([jsonString], {type: '.json'});
     console.log(jsonString)
-    dl.href = `data:application/json;charset=utf-8,`+jsonString
+    dl.href = URL.createObjectURL(file);
     dl.click()
 })
 
