@@ -27,7 +27,8 @@ class Drivers {
         this._drivers = new Map();
         this._numDrivers = 1;
         for (let i = 0; i < MAX_DRIVERS; i++) {
-            let driver = new Driver(i);
+            let driver = new Driver();
+            driver.initialiseNew(i)
             let row = _driversTable.insertRow(i);
             if (i > this._numDrivers - 1) {
                 row.style.display = "none";
@@ -40,9 +41,15 @@ class Drivers {
         }
     }
 
-    loadFromJson(jsonObject) {
-        this._drivers = jsonObject._drivers;
+    loadFromJSON(jsonObject) {
+        this._drivers = new Map();
+        for (const [id, driver] of jsonObject._drivers) {
+            let newDriver = new Driver();
+            newDriver.loadFromJSON(driver);
+            this._drivers.set(id, newDriver);
+        }
         this._numDrivers = jsonObject._numDrivers;
+        this.populateTables();
     }
 
 
@@ -65,30 +72,31 @@ class Drivers {
             }
         }
     }
+
+    populateTables() {
+        this.updateTables();
+        for (let i = 0; i < MAX_DRIVERS; i++) {
+            let driver = this._drivers.get(i);
+            driver.populateTables();
+        }
+    }
 }
 
 class lapTime {
-    min;
-    sec;
-    ms;
+    _min;
+    _sec;
+    _ms;
 
     constructor() {
-        this._min = 0.0;
-        this._sec = 0.0;
-        this._ms = 0.0;
+        // this._min = 0.0;
+        // this._sec = 0.0;
+        // this._ms = 0.0;
     }
 
-
-    set min(value) {
-        this._min = parseFloat(value);
-    }
-
-    set sec(value) {
-        this._sec = parseFloat(value);
-    }
-
-    set ms(value) {
-        this._ms = parseFloat(value);
+    loadFromJSON(jsonObject) {
+        this._min = jsonObject._min;
+        this._sec = jsonObject._sec;
+        this._ms = jsonObject._ms;
     }
 
     toString() {
@@ -106,7 +114,22 @@ class Driver {
 
     _tyrePressuresAtTemps;
 
-    constructor(id) {
+    constructor() {
+
+    }
+
+    loadFromJSON(jsonObject) {
+        this._id = jsonObject._id;
+        this._tyrePressuresAtTemps = new TyrePressuresAtTemps(this._id);
+        this._tyrePressuresAtTemps.loadFromJSON(jsonObject._tyrePressuresAtTemps);
+        this._raceLap = new lapTime();
+        this._raceLap.loadFromJSON(jsonObject._raceLap);
+        this._raceLapFuel = jsonObject._raceLapFuel;
+        this._name = jsonObject._name;
+        this._containingRow = document.getElementById(DRIVERS_TABLE_ID).rows[this._id];
+    }
+
+    initialiseNew(id) {
         this._id = id;
         this._tyrePressuresAtTemps = new TyrePressuresAtTemps(this._id);
         this._raceLap = new lapTime();
@@ -160,12 +183,14 @@ class Driver {
         return table;
     }
 
-    get tyrePressuresAtTemps() {
-        return this._tyrePressuresAtTemps;
-    }
-
-    get driverTable() {
-
+    populateDriverTable(driverTable) {
+        let driverInputs = driverTable.querySelectorAll('input');
+        let loadValues = [this._name, this._raceLap._min, this._raceLap._sec, this._raceLap._ms, this._raceLapFuel];
+        for (let i = 0; i < loadValues.length; i++) {
+            if (loadValues[i]) {
+                driverInputs[i].value = loadValues[i];
+            }
+        }
     }
 
     toString() {
@@ -177,6 +202,13 @@ class Driver {
             + "\nvvv Tyres vvv\n" + this._tyrePressuresAtTemps.toString();
 
         return returnString;
+    }
+
+    populateTables() {
+        let driverTable = this._containingRow.getElementsByClassName(DRIVER_TABLE_MAIN_INFO_CLASS)[0];
+        this.populateDriverTable(driverTable);
+        let pressuresTable = this._containingRow.getElementsByClassName(DRIVER_TABLE_TYRE_INFO_CLASS)[0];
+        this._tyrePressuresAtTemps.populatePressuresTable(pressuresTable);
     }
 }
 
@@ -190,6 +222,12 @@ class TyrePressuresAtTemps {
 
         for (let i = MIN_TEMP; i <= MAX_TEMP; i++) {
             this._tempsAndPressures.set(i, new TyrePressures());
+        }
+    }
+
+    loadFromJSON(jsonObject) {
+        for (let i = MIN_TEMP; i <= MAX_TEMP; i++) {
+            this._tempsAndPressures.get(i).loadFromJSON(jsonObject._tempsAndPressures.get(i));
         }
     }
 
@@ -208,9 +246,9 @@ class TyrePressuresAtTemps {
             cell.innerHTML = TYRES[i];
             cell.style.textAlign = "center";
         }
-
+        let body = table.createTBody();
         for (let i = MIN_TEMP; i <= MAX_TEMP; i++) {
-            let row = table.insertRow(-1);
+            let row = body.insertRow(-1);
             row.insertCell(-1).innerHTML = i;
             for (let j = 0; j < TYRES.length; j++) {
                 row.insertCell(-1).innerHTML = "<input type='tel' style='width: 5ch' maxlength='5' onchange='d._drivers.get(" + this._id.toString() + ")._tyrePressuresAtTemps._tempsAndPressures.get(" + i.toString() + ").pressures.set(\"" + TYRES[j] + "\",parseFloat(this.value))'>";
@@ -222,6 +260,14 @@ class TyrePressuresAtTemps {
             }
         }
         return table;
+    }
+
+    populatePressuresTable(pressuresTable) {
+        let pressuresTableNoHeader = pressuresTable.querySelectorAll('tbody')[0];
+        let pressureRows = pressuresTableNoHeader.querySelectorAll('tr');
+        for (let i = MIN_TEMP; i <= MAX_TEMP; i++) {
+            this._tempsAndPressures.get(i).populatePressureRow(pressureRows[i - MIN_TEMP]);
+        }
     }
 
     toString() {
@@ -240,6 +286,25 @@ class TyrePressures {
 
     constructor() {
         this.pressures = new Map();
+    }
+
+    loadFromJSON(jsonObject) {
+        for (let i = 0; i < TYRES.length; i++) {
+            let pressure = jsonObject.pressures.get(TYRES[i]);
+            if (pressure) {
+                this.pressures.set(TYRES[i], pressure);
+            }
+        }
+    }
+
+    populatePressureRow(pressureRow) {
+        let inputs = pressureRow.querySelectorAll('input');
+        for (let i = 0; i < TYRES.length; i++) {
+            let pressure = this.pressures.get(TYRES[i]);
+            if (pressure){
+                inputs[i].value = pressure;
+            }
+        }
     }
 
     setPressures(pressuresArray) {
