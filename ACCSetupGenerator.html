@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>ACC Setup Generator</title>
+</head>
+<body>
+<div class="navBar">
+    <a class="navLink" href="./">Home</a>
+</div>
+<div class="centered">
+    <div class="pageCenter">
+        <h1>
+            ACC Endurance Strategy Planner
+        </h1>
+        <div id="raceInfo"></div>
+        <div id="trackInfo"></div>
+        <div id="driverInfo" style="width: 100%;">
+            <table id="driverTables" style="width: 100%">
+            </table>
+        </div>
+    </div>
+</div>
+
+<input type="file" id="uploadPlannerJSON">
+<button id="download">Download</button>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+    kofiWidgetOverlay.draw('tedbarrett', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.background-color': '#ff5f5f',
+        'floating-chat.donateButton.text-color': '#fff'
+    });
+</script>
+
+</body>
+<script type="text/javascript" src="ACC_Classes.js"></script>
+<script type="text/javascript" src="ACCSetup.js"></script>
+</html>

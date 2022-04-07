@@ -3,58 +3,91 @@
 <link rel="stylesheet" href="style.css">
 <script type="text/javascript" src="prevvalues.js"></script>
 <body onload="setPrevValues(['framex','framey','sourcex','sourcey','tilesx','tilesy','scale','hoffset','voffset'])">
-<a href="index.html">Home</a>
-<h1>
-    Premiere Tiling calculator
-</h1>
-<p>
-    Use the crop effect in combination with this tool to create nicely tiled videos.
-</p>
-<form>
-    <table>
-        <tr>
-            <td align="right">Frame size:</td>
-            <td align="left"><input type="number" id="framex" name="framex" value=1920 autofocus onfocus="this.select()"></td>
-            <td>X</td>
-            <td align="left"><input type="number" id="framey" name="framey" value=1080 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Source size:</td>
-            <td align="left"><input type="number" id="sourcex" name="sourcex" value=1920 onfocus="this.select()"></td>
-            <td>X</td>
-            <td align="left"><input type="number" id="sourcey" name="sourcey" value=1080 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Tiles:</td>
-            <td align="left"><input type="number" id="tilesx" name="tilesx" value=3 onfocus="this.select()"></td>
-            <td>X</td>
-            <td align="left"><input type="number" id="tilesy" name="tilesy" value=2 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Scale:</td>
-            <td align="left"><input type="number" id="scale" name="scale" value=100 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-<!--    </table>-->
-<!--</form>-->
-<!--<form>-->
-<!--    <table>-->
-        <tr>
-            <td align="right">Horizontal offset (crop %):</td>
-            <td align="left"><input type="number" id="hoffset" name="hoffset" value=0 onfocus="this.select()"></td>
-        </tr>
-        <tr>
-            <td align="right">Vertical offset (crop %):</td>
-            <td align="left"><input type="number" id="voffset" name="voffset" value=0 onfocus="this.select()"></td>
-        </tr>
-        <tr><td align="right"><input type="submit" value="Submit"></td></tr>
-    </table>
-</form>
-<p id="output">
-</p>
+<div class="navBar">
+    <a class="navLink" href="./">Home</a>
+</div>
+<div class="centered">
+    <div class="pageCenter">
+        <h1>
+            Premiere Tiling calculator
+        </h1>
+        <p>
+            Use the crop effect in combination with this tool to create nicely tiled videos.
+        </p>
+        <form>
+            <table>
+                <tr>
+                    <td style="text-align: right">Frame size:</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="framex" name="framex" value=1920 onfocus="this.select()">
+                    </td>
+                    <td>x</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="framey" name="framey" value=1080 onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">Source size:</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="sourcex" name="sourcex" value=1920 onfocus="this.select()">
+                    </td>
+                    <td>x</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="sourcey" name="sourcey" value=1080 onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">Tiles:</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="tilesx" name="tilesx" value=3 onfocus="this.select()">
+                    </td>
+                    <td>x</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="tilesy" name="tilesy" value=2 onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">Scale:</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="scale" name="scale" value=100 onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                <tr>
+                    <td style="text-align: right">Horizontal offset (crop %):</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="hoffset" name="hoffset" value=0 onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td style="text-align: right">Vertical offset (crop %):</td>
+                    <td>
+                        <input style="width: 6ch" type="number" id="voffset" name="voffset" value=0 onfocus="this.select()">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <p id="output">
+        </p>
+    </div>
+</div>
 <script type="text/javascript" src="premiereTiling.js"></script>
 <script>
     calcPremiereTiles("output")
 </script>
+
+<script src='https://storage.ko-fi.com/cdn/scripts/overlay-widget.js'></script>
+<script>
+    kofiWidgetOverlay.draw('tedbarrett', {
+        'type': 'floating-chat',
+        'floating-chat.donateButton.text': 'Support me',
+        'floating-chat.donateButton.background-color': '#ff5f5f',
+        'floating-chat.donateButton.text-color': '#fff'
+    });
+</script>
+
 </body>
 </html>
